@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: wheat;
+        }
+
+        .profile-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;    
+        }
+
+        .profile-card:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-picture img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .user-name {
+            font-size: 24px;
+            color: blue;
+            margin-bottom: 10px;
+        }
+
+        .user-bio {
+            font-size: 16px;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .social-media .icon {
+            background: green;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .follow {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;    
+        }
+
+        .follow:hover {
+            background: greenyellow;    
+        }
+
+        @media (max-width: 768px) {
+            .profile-card {
+                width: 90%;
+            }
+
+            .user-name {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="profile-picture">
+            <img src="logo.png" alt="Profile Picture">
+        </div>
+        <h2 class="user-name">Raja Mia Raj</h2>
+        <p class="user-bio">Web Developer. Passionate about coding and design.</p>
+        <div class="social-media">
+            <div class="icon">FB</div>
+            <div class="icon">TW</div>
+            <div class="icon">IG</div>
+        </div>
+        <button class="follow">Follow</button>
+    </div>
+
+</body>
+</html>

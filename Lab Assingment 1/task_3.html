@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px; 
+            width: auto;
+        }
+
+        
+        .nav {
+            flex-grow: 1; 
+            display: flex;
+            justify-content: center; 
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav ul li {
+            margin-left: 20px;
+        }
+
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav ul li a:hover {
+            color: red;
+        }
+
+        
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr; 
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .sidebar-left, .sidebar-right {
+            background-color: white;
+            padding: 20px;
+        }
+
+        .content {
+            background-color: white;
+            padding: 20px;
+        }
+
+        .article {
+            margin-bottom: 20px;
+        }
+
+        .article img {
+            width: 100%;
+            height: auto;            
+            object-fit: cover;
+        }
+
+        
+        .footer {
+            display: grid;
+            gap: 20px;
+            padding: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer ul li {
+            margin-bottom: 10px;
+        }
+        .sidebar-right img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; 
+    height: auto;
+}
+
+
+        
+        @media (max-width: 768px) {
+            .main {
+                grid-template-columns: 1fr; 
+            }
+
+            .footer {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.png" alt="Website Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <aside class="sidebar-left">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="https://www.thedailystar.net/news/bangladesh/governance/news/derogatory-remark-against-ca-jhalakathi-staffer-suspended-3722536">Link 1</a></li>
+                <li><a href="https://www.thedailystar.net/news/bangladesh/politics/news/chhatra-odhikar-parishad-issues-24hr-ultimatum-demanding-ban-bcl-3722531">Link 2</a></li>
+                <li><a href="https://www.thedailystar.net/sports/football/news/city-claim-partial-win-over-premier-league-apt-rules-3722526">Link 3</a></li>
+            </ul>
+        </aside>
+        
+        <section class="content">
+            <article class="article">
+                <h2>Article 1</h2>
+                <p>Yunus’ economic gambit paying off
+                    Two months ago, as Professor Muhammad Yunus waded into Bangladesh’s unprecedented political turmoil, he inherited economic chaos by default</p>
+            </article>
+            <article class="article">
+                <h2>Article 2</h2>
+                <p>The government today formed a full commission to carry out constitutional reforms.
+
+                    The commission was formed after Chief Adviser Prof Muhammad Yunus approved it, according to a gazette notification.</p>
+            </article>
+        </section>
+        
+        <aside class="sidebar-right">
+            <h2>Advertisements</h2>
+            <img src="images (1).jpeg" alt="">
+            <p>Pran Foods is the flagship company of the group and RFL is the subsidiary company. Pran-RFL Group has several joint ventures with international companies, such as PepsiCo, Danone, and Nestlé.</p>
+        </aside>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="https://www.thedailystar.net/sports/cricket/news/same-story-different-day-tigers-t20-woes-re-exposed-3722516">Link 1</a></li>
+                <li><a href="https://www.thedailystar.net/news/world/usa/news/work-microrna-nobel-prize-medicine-goes-us-duo-3722511">Link 2</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <ul>
+                <li>Email: mr.rajamiaraj@gmail.com</li>
+                <li>Phone: 01776768462</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
