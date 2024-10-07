@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Responsive web page</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        header{
+            background-color: black;
+            color: white;
+            position: sticky;
+            width: 100%;
+            align-items: center;
+            
+        }
+        nav ul{
+            display:flex;
+            list-style: none;
+        }
+        nav ul li{
+            margin: 1%;
+        }
+        nav ul li a{
+            color: aliceblue;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .card{
+            background-color: #f4f4f4;
+            padding: 1.5rem;
+            text-align: center;
+            border-radius: 5px;
+            
+        }
+        .card :hover{
+            transform: scale(1.05);
+        }
+        .card img{
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .card h3{
+            margin: 1%;
+        }
+        .card a{
+            color: #007BFF;
+            font-weight: bold;
+        }
+        footer{
+            background-attachment: #333;
+            color: white;
+            text-align: center;
+            padding: 1%;
+        }
+        footer ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+
+        }
+        footer ul li{
+            margin: 1%;
+
+        }
+        footer ul li a{
+            color: black;
+        }
+        footer p{
+            margin-top: 1%;
+            font-size: medium;
+        }
+        .hero{
+            background: url(https://www.pokemon.com/static-assets/content-assets/cms2/img/video-games/video-games/pokemon_go/169.jpg);
+            height: 327px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            text-align: center;
+            
+        }
+        .hero h1{
+            font-size: xx-large;
+            margin-bottom: 1 rem;
+        }
+        .hero button{
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: auto;
+            cursor: pointer;
+            font-size: 1 rem;
+            border-radius: 4px;
+        }
+        .hero button:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Website</h1>
+        <nav>
+            <ul id="nav-list">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+    
+    
+            </ul> 
+        </nav>
+    
+    </header>
+    
+    <main>
+        <section class="hero">
+            <div>
+                <h1 style="background-color: beige;">welcome to my website</h1>
+                <button>Get Started</button>
+            </div>
+
+        </section>
+
+        <section class="one">
+            <div class = card>
+                <img src="two.jpg" alt="">
+                <h3>Pikachu</h3>
+                <p>Pikachu is a yellow mouse Pokémon from the fictional Pokémon world that was created by Satoshi Tajiri. Pikachu is the mascot of the Pokémon franchise, and one of the main characters of the Pokémon anime series</p>
+                <a href="https://characterprofile.fandom.com/wiki/Pikachu">Read More</a>
+            </div>
+            <div class = card>
+                <img src="one.jpg" alt="">
+                <h3>Mewtwo</h3>
+                <p>Mewtwo is regarded as one of the series' strongest Pokémon, and was the strongest in the original games in terms of base statistic distribution. It is known as the "Genetic Pokémon" and is a Legendary Pokémon, a special group of Pokémon that are very rare and usually very powerful.</p>
+                <a href="https://characterprofile.fandom.com/wiki/Mewtwo">Read More</a>
+            </div>
+            <div class = card>
+                <img src="three.jpg" alt="">
+                <h3>Charizard</h3>
+                <p>An orange, dragon-like Pokémon, Charizard is the evolved form of Charmeleon and the final evolution of Charmander. It also has two "Mega Evolved" forms, Mega Charizard X and Y, that were likely both designed by Tomohiro Kitakaze, the designer of Mega Charizard X.</p>
+                <a href="https://characterprofile.fandom.com/wiki/Charizard">Read More</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/">Instagram</a></li>
+            <li><a href="https://x.com/">Twitter</a></li>
+        </ul>
+        <p style="color: #333;"> &copy 2024 ALL RIGHTS RESERVED BY RMR</p>
+    </footer>
+</body>
+</html>
